@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+.announcement-banner {
+    background: #ff9800;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+
+.announcement-banner a {
+    color: white;
+    text-decoration: underline;
+    margin-left: 0.5rem;
+}
+
+.announcement-banner a:hover {
+    color: #f5f5f5;
+}
+
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
@@ -124,6 +142,58 @@ body {
 
 .section {
     padding: 6rem 2rem;
+}
+
+.schedule-section {
+    padding: 6rem 2rem;
+    background: #fff;
+}
+
+.schedule-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.schedule-day {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.schedule-day h3 {
+    color: #1a237e;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #1a237e;
+    padding-bottom: 0.5rem;
+}
+
+.schedule-items {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.schedule-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.time {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.event {
+    color: #333;
+    font-weight: 500;
 }
 
 .section-title {
