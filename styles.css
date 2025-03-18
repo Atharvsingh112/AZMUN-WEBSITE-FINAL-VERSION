@@ -43,6 +43,39 @@ body {
     color: #ffd700;
 }
 
+.nav-links li {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1a237e;
+    min-width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    z-index: 1000;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.dropdown a:hover {
+    background: rgba(255,255,255,0.1);
+}
+
 .header {
     background: url('../header.jpg.webp') no-repeat center center;
     background-size: cover;
